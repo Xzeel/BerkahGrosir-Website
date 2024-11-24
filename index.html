@@ -11,6 +11,7 @@
     <script src="script.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="src/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200">
 
@@ -23,7 +24,7 @@
 
     <!-- Bagian Sponsor -->
     <section class="bg-white py-6">
-        <div class="max-w-7xl mx-auto px-4">
+        <div data-aos="zoom-in" class="max-w-7xl mx-auto px-4">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Sponsor Kami</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 <!-- Sponsor 1 -->
@@ -48,7 +49,7 @@
 
     <!-- Produk -->
     <main class="py-6">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div data-aos="zoom-in" class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Produk 1 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
                 <img src="https://via.placeholder.com/300" alt="Produk 1" class="w-full h-48 object-cover product-image">
@@ -61,7 +62,7 @@
             </div>
 
             <!-- Produk 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
+            <div data-aos="zoom-in" class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
                 <img src="https://via.placeholder.com/300" alt="Produk 2" class="w-full h-48 object-cover product-image">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold text-gray-800">Produk 2</h2>
@@ -72,7 +73,7 @@
             </div>
 
             <!-- Produk 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
+            <div data-aos="zoom-in" class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
                 <img src="https://via.placeholder.com/300" alt="Produk 3" class="w-full h-48 object-cover product-image">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold text-gray-800">Produk 3</h2>
@@ -83,7 +84,7 @@
             </div>
 
             <!-- Produk 4 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
+            <div data-aos="zoom-in" class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl">
                 <img src="https://via.placeholder.com/300" alt="Produk 4" class="w-full h-48 object-cover product-image">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold text-gray-800">Produk 4</h2>
@@ -102,5 +103,9 @@
             <p>Berkah Grosir is <a href="https://github.com/Xzeel/BerkahGrosir-Website" target="_blank" class="text-blue-400 hover:underline">open source</a>.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

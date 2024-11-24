@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkah Grosir</title>
+    <meta name="description" content="Toko Online menyediakan berbagai produk berkualitas dengan harga terjangkau. Temukan produk terbaik untuk kebutuhan Anda.">
+    <meta name="keywords" content="berkah grosir, toko online, belanja online, produk berkualitas, harga terjangkau">
+    <link rel="canonical" href="https://www.berkahgrosir.com/">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="src/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-extrabold text-white">Berkah Grosir</h1>
+        </div>
+    </header>
+
+    <!-- Form Login -->
+    <main class="flex items-center justify-center min-h-screen">
+        <div class="bg-white rounded-lg shadow-md p-8 w-full max-w-sm">
+            <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+            <form action="php/login.php" method="POST">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="username" name="username" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200">Login</button>
+            </form>
+            <p class="mt-4 text-center text-sm text-gray-600">
+                Belum punya akun? <a href="register.html" class="text-blue-500 hover:underline">Daftar di sini</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2024 Berkah Grosir. Dikembangkan oleh Tim <a target="_blank" href="https://absolutenet.xyz">Absolute Development</a>.</p>
+            <p>Berkah Grosir is <a href="https://github.com/Xzeel/BerkahGrosir-Website" target="_blank" class="text-blue-400 hover:underline">open source</a>.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
