@@ -12,4 +12,4 @@
 </p>
 
 ## Copyright
-Copyright (c) 2024 Portofolio-Website. https://xzeelketche.carrd.co/
+Copyright (c) 2024 BerkahGrosir-Website. https://xzeelketche.carrd.co/
