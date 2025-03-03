@@ -28,3 +28,4 @@ try {
         // Redirect ke halaman login setelah pendaftaran berhasil
         header("Location: login.html");
         exit;
+    }
