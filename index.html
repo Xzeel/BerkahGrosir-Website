@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="lenis lenis-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="src/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.22/dist/lenis.css">
 
     <!-- Social Profile -->
     <meta property="og:title" content="Berkah Grosir">
@@ -110,25 +109,35 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-4">
         <div class="max-w-7xl mx-auto text-center">
-            <p>&copy; 2024 - <span id="currentYear"></span> Berkah Grosir. Dikembangkan oleh Tim <a target="_blank" href="https://envystudio.xyz">Envy Studio</a>.</p>
+            <p>&copy; 2024 - <span id="currentYear"></span> Berkah Grosir. Dikembangkan oleh Tim <a target="_blank" href="https://astranous.studio/">Astranous Studio</a>.</p>
             <p>Berkah Grosir is <a href="https://github.com/Xzeel/BerkahGrosir-Website" target="_blank" class="text-blue-400 hover:underline">open source</a>.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Initialize AOS
         AOS.init();
-    </script>
-    <script src="https://unpkg.com/lenis@1.1.22/dist/lenis.min.js"></script>
-    <script>
+
+        // Get the current year
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+        // Initialize Lenis Smooth Scroll
         const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            autoRaf: true,
-            anchors: true,
-        });
-    </script>
-    <script>  
-        document.getElementById('currentYear').innerText = new Date().getFullYear();  
+            smooth: true,
+            direction: 'vertical',
+        })
+
+        lenis.on('scroll', (e) => {
+            // Optional scroll event listener
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
     </script>
 </body>
 </html>
